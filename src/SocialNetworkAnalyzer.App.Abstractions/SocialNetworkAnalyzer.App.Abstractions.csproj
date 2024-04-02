@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SocialNetworkAnalyzer.Core.Guards\SocialNetworkAnalyzer.Core.Guards.csproj" />
+      <ProjectReference Include="..\SocialNetworkAnalyzer.Data.EntityFramework\SocialNetworkAnalyzer.Data.EntityFramework.csproj" />
+    </ItemGroup>
+</Project>
